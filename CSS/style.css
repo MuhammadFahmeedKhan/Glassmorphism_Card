@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Images/background.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 30%;
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40.5px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 3rem;
+    padding-inline: 3rem;
+    cursor: pointer;
+}
+.card .profile_pic{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4rem;
+    background-image: url("../Images/IMG_8796.JPG");
+    background-size: cover;
+    background-position-y: 100%;
+}
+.card h1{
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    color: #85C1E9;
+}
+.card p{
+    font-weight: 400;
+    color: #E5E7E9;
+    text-align: center;
+    font-size: .8rem;
+    padding-top: .5rem;
+}
+.card .social_links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-inline: .8rem;
+}
+.card .social_links .social_icon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    transition: background-color .5s linear;
+}
+.card .social_links .social_icon i{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #85C1E9;
+    cursor: pointer;
+}
+.card .social_links .social_icon:hover{
+    background-color: #85C1E9;
+}
+.card .social_links .social_icon:hover i{
+    color:#fff
+}
+
+@media(max-width:1240px){
+    .card h1{
+        font-size: 1rem;
+    }
+}
+@media(max-width:1103px){
+    .card h1{
+        font-size: .9rem;
+    }
+    .card p{
+        font-size: .7rem;
+    }
+    .card .social_links .social_icon{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 2rem;
+    }
+    .card .social_links .social_icon i{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:1025px){
+    .card{
+        padding-inline: 2rem;
+    }
+}
+@media(max-width:920px){
+    .card{
+        padding-inline: 1.8rem;
+    }
+    .card .profile_pic{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+    }
+    .card .social_links .social_icon{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 2rem;
+    }
+    .card .social_links .social_icon i{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:897px){
+    .card{
+        padding-inline: 1.6rem;
+    }
+    .card .profile_pic{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+    }
+    .card h1{
+        text-align: center;
+    }
+    .card .social_links .social_icon{
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 2rem;
+    }
+    .card .social_links .social_icon i{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:800px){
+    .card{
+        padding-inline: 1.3rem;
+        padding-block: 1.1;
+    }
+    .card .profile_pic{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 3rem;
+    }
+    .card h1{
+        text-align: center;
+    }
+    .card .social_links .social_icon{
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 2rem;
+    }
+    .card .social_links .social_icon i{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:700px){
+    .card{
+        padding-inline: 1rem;
+        padding-block: 1.2rem;
+    }
+    .card .profile_pic{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 3rem;
+    }
+    .card h1{
+        text-align: center;
+        font-size:1rem ;
+    }
+    .card p{
+        font-size:.6rem;
+    }
+    .card .social_links .social_icon{
+        width: 2rem;
+        height: 2rem;
+        border-radius: rem;
+    }
+    .card .social_links .social_icon i{
+        font-size: 1rem;
+    }
+}
+@media(max-width:548px){
+    .card{
+        padding-inline: 1rem;
+        padding-block: 1.2rem;
+    }
+    .card .profile_pic{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+    }
+    .card h1{
+        text-align: center;
+        font-size:.8rem ;
+    }
+    .card p{
+        font-size:.5rem;
+    }
+    .card .social_links .social_icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: .8rem;
+    }
+    .card .social_links .social_icon i{
+        font-size: .8rem;
+    }
+}
+@media(max-width:420px){
+    .card{
+        padding-inline: .9rem;
+        padding-block: .9rem;
+    }
+    .card .profile_pic{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+    }
+    .card h1{
+        text-align: center;
+        font-size:.6rem ;
+    }
+    .card p{
+        font-size:.4rem;
+    }
+    .card .social_links .social_icon{
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: .8rem;
+    }
+    .card .social_links .social_icon i{
+        font-size: .5rem;
+    }
+}
